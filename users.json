@@ -1,0 +1,23 @@
+{
+    "Назар": {
+        "username": "Назар",
+        "password": "123",
+        "name": "Назар",
+        "prizvushce": "Яйко",
+        "pobatkovi": "Петрович",
+        "burthday": "29/09/2006",
+        "phone": "0973748002",
+        "email": "nazar@gmail.com",
+        "ukr_lan_score": "183",
+        "math_score": "193",
+        "history": "170",
+        "forth_subject": [
+            5,
+            "165"
+        ],
+        "creative_concurse": "0",
+        "EFVV_score": "0",
+        "photo": "",
+        "favorite_institutions": []
+    }
+}

@@ -1,0 +1,2478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>582</width>
+    <height>370</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+border:none;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item alignment="Qt::AlignTop">
+       <widget class="QFrame" name="header_frame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item alignment="Qt::AlignLeft">
+          <widget class="QFrame" name="header_central_frame">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(57, 84, 78);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item alignment="Qt::AlignRight">
+             <widget class="QLabel" name="university_label">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="icons.qrc">:/icons/icons/account_balance_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24 – копія.svg</pixmap>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="app_name_label">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Довідник Абітурієнта</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+           <zorder>app_name_label</zorder>
+           <zorder>university_label</zorder>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(57, 84, 78);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignRight">
+          <widget class="QFrame" name="header_right_frame">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(57, 84, 78);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item alignment="Qt::AlignTop">
+             <widget class="QPushButton" name="minimize_window_button">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icons.qrc">
+                <normaloff>:/icons/icons/minimize_24dp_000000.png</normaloff>:/icons/icons/minimize_24dp_000000.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignTop">
+             <widget class="QPushButton" name="restor_window_button">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icons.qrc">
+                <normaloff>:/icons/icons/open_in_full_24dp_000000.png</normaloff>:/icons/icons/open_in_full_24dp_000000.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignTop">
+             <widget class="QPushButton" name="close_window_button">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 0, 0);</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="icons.qrc">
+                <normaloff>:/icons/icons/close_24dp_000000.png</normaloff>:/icons/icons/close_24dp_000000.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignTop">
+       <widget class="QFrame" name="upper_frame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item alignment="Qt::AlignLeft">
+          <widget class="QFrame" name="right_menu_frame">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(57, 84, 78);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item alignment="Qt::AlignLeft">
+             <widget class="QPushButton" name="menu_button">
+              <property name="font">
+               <font>
+                <pointsize>14</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Меню</string>
+              </property>
+              <property name="icon">
+               <iconset resource="icons.qrc">
+                <normaloff>:/icons/icons/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/menu_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>40</width>
+                <height>40</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="central_frame">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(57, 84, 78);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignRight">
+          <widget class="QFrame" name="left_frame">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(57, 84, 78);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <item>
+             <widget class="QPushButton" name="account_button">
+              <property name="font">
+               <font>
+                <pointsize>14</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Гість</string>
+              </property>
+              <property name="icon">
+               <iconset resource="icons.qrc">
+                <normaloff>:/icons/icons/account_circle_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24 – копія.png</normaloff>:/icons/icons/account_circle_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24 – копія.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>40</width>
+                <height>40</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="main_body_frame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="left_munu_cont_frame">
+           <property name="minimumSize">
+            <size>
+             <width>37</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>22</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(96, 145, 122);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item alignment="Qt::AlignLeft|Qt::AlignTop">
+             <widget class="QFrame" name="menu_frame">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <property name="spacing">
+                <number>6</number>
+               </property>
+               <item row="4" column="1" alignment="Qt::AlignLeft">
+                <widget class="QLabel" name="label_4">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Розлогінитися</string>
+                 </property>
+                 <property name="margin">
+                  <number>5</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1" alignment="Qt::AlignLeft">
+                <widget class="QLabel" name="label_3">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Спеціальності</string>
+                 </property>
+                 <property name="margin">
+                  <number>5</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1" alignment="Qt::AlignLeft">
+                <widget class="QLabel" name="label_2">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Конкурсний бал</string>
+                 </property>
+                 <property name="margin">
+                  <number>5</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1" alignment="Qt::AlignLeft">
+                <widget class="QLabel" name="label">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Навчальні заклади</string>
+                 </property>
+                 <property name="margin">
+                  <number>5</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0" alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="institution_button">
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="icons.qrc">
+                   <normaloff>:/icons/icons/school_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/school_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="calculation_button">
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="icons.qrc">
+                   <normaloff>:/icons/icons/calculate_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/calculate_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0" alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="specialty_button">
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="icons.qrc">
+                   <normaloff>:/icons/icons/menu_book_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/menu_book_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0" alignment="Qt::AlignLeft">
+                <widget class="QPushButton" name="log_out_button">
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="icons.qrc">
+                   <normaloff>:/icons/icons/logout_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/logout_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QPushButton" name="account_menu_button">
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="icons.qrc">
+                   <normaloff>:/icons/icons/account_circle_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24 – копія.png</normaloff>:/icons/icons/account_circle_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24 – копія.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLabel" name="label_18">
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Акаунт</string>
+                 </property>
+                 <property name="margin">
+                  <number>5</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="main_body_contents">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(221, 213, 194);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QStackedWidget" name="stackedWidget">
+              <property name="currentIndex">
+               <number>3</number>
+              </property>
+              <widget class="QWidget" name="institutions_page">
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QStackedWidget" name="main_body_inst_stackedWidget">
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="contextMenuPolicy">
+                   <enum>Qt::NoContextMenu</enum>
+                  </property>
+                  <widget class="QWidget" name="main_body_inst_stackedWidgetPage1">
+                   <layout class="QVBoxLayout" name="verticalLayout_4">
+                    <property name="leftMargin">
+                     <number>20</number>
+                    </property>
+                    <item>
+                     <widget class="QFrame" name="header_inst_frame">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_14">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>6</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>6</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="label_5">
+                         <property name="font">
+                          <font>
+                           <pointsize>16</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>Навчальні заклади</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item alignment="Qt::AlignRight">
+                        <widget class="QFrame" name="search_frame">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QHBoxLayout" name="horizontalLayout_13">
+                          <item>
+                           <widget class="QComboBox" name="comboBox_2">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: rgb(57, 84, 78);</string>
+                            </property>
+                            <item>
+                             <property name="text">
+                              <string>За алфавітом</string>
+                             </property>
+                            </item>
+                            <item>
+                             <property name="text">
+                              <string>За містом</string>
+                             </property>
+                            </item>
+                            <item>
+                             <property name="text">
+                              <string>За ID</string>
+                             </property>
+                            </item>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="pushButton">
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="icon">
+                             <iconset resource="icons.qrc">
+                              <normaloff>:/icons/icons/sort_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/sort_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+                            </property>
+                            <property name="iconSize">
+                             <size>
+                              <width>24</width>
+                              <height>24</height>
+                             </size>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLineEdit" name="search_lineEdit">
+                            <property name="styleSheet">
+                             <string notr="true">background-color: rgb(57, 84, 78);</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Пошук універстету</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="search_button">
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="icon">
+                             <iconset resource="icons.qrc">
+                              <normaloff>:/icons/icons/search_24dp_000000.png</normaloff>:/icons/icons/search_24dp_000000.png</iconset>
+                            </property>
+                            <property name="iconSize">
+                             <size>
+                              <width>32</width>
+                              <height>32</height>
+                             </size>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QTableWidget" name="tableWidget">
+                      <property name="cursor" stdset="0">
+                       <cursorShape>PointingHandCursor</cursorShape>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <attribute name="horizontalHeaderDefaultSectionSize">
+                       <number>83</number>
+                      </attribute>
+                      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                       <bool>false</bool>
+                      </attribute>
+                      <column>
+                       <property name="text">
+                        <string>ID</string>
+                       </property>
+                       <property name="background">
+                        <color>
+                         <red>96</red>
+                         <green>145</green>
+                         <blue>122</blue>
+                        </color>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Назва</string>
+                       </property>
+                       <property name="background">
+                        <color>
+                         <red>96</red>
+                         <green>145</green>
+                         <blue>122</blue>
+                        </color>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Коротка назва</string>
+                       </property>
+                       <property name="background">
+                        <color>
+                         <red>96</red>
+                         <green>145</green>
+                         <blue>122</blue>
+                        </color>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Місцезнаходження</string>
+                       </property>
+                       <property name="background">
+                        <color>
+                         <red>96</red>
+                         <green>145</green>
+                         <blue>122</blue>
+                        </color>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Телефон</string>
+                       </property>
+                       <property name="background">
+                        <color>
+                         <red>96</red>
+                         <green>145</green>
+                         <blue>122</blue>
+                        </color>
+                       </property>
+                      </column>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="main_body_inst_stackedWidgetPage2">
+                   <layout class="QVBoxLayout" name="verticalLayout_13">
+                    <item alignment="Qt::AlignTop">
+                     <widget class="QFrame" name="Header">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_20">
+                       <item alignment="Qt::AlignLeft">
+                        <widget class="QPushButton" name="goBack_button">
+                         <property name="cursor">
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="text">
+                          <string>Назад до таблиці</string>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="icons.qrc">
+                           <normaloff>:/icons/icons/arrow_back_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/arrow_back_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+                         </property>
+                         <property name="iconSize">
+                          <size>
+                           <width>24</width>
+                           <height>24</height>
+                          </size>
+                         </property>
+                        </widget>
+                       </item>
+                       <item alignment="Qt::AlignRight">
+                        <widget class="QPushButton" name="favorite_button">
+                         <property name="cursor">
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="text">
+                          <string>Додати до улюбленого</string>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="icons.qrc">
+                           <normaloff>:/icons/icons/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/favorite_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+                         </property>
+                         <property name="iconSize">
+                          <size>
+                           <width>24</width>
+                           <height>24</height>
+                          </size>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="inst_body_info_frame">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_6">
+                       <item row="6" column="1" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="phone_label">
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="9" column="1" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="register_year_label">
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="5" column="1" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="location_label">
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="0" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="label_37">
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(96, 145, 122);</string>
+                         </property>
+                         <property name="text">
+                          <string>Найменування посади, ПІБ керівника</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="5" column="0" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="label_38">
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(96, 145, 122);</string>
+                         </property>
+                         <property name="text">
+                          <string>Місцезнаходження</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="6" column="0" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="label_39">
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(96, 145, 122);</string>
+                         </property>
+                         <property name="text">
+                          <string>Телефон</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="7" column="0" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="label_40">
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(96, 145, 122);</string>
+                         </property>
+                         <property name="text">
+                          <string>Електронна пошта</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="9" column="0" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="label_43">
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(96, 145, 122);</string>
+                         </property>
+                         <property name="text">
+                          <string>Рік заснування</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="8" column="0" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="label_41">
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(96, 145, 122);</string>
+                         </property>
+                         <property name="text">
+                          <string>Веб-сайт</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="label_36">
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(96, 145, 122);</string>
+                         </property>
+                         <property name="text">
+                          <string>Повне найменування (англ)</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="short_name_label">
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="general_name_label">
+                         <property name="font">
+                          <font>
+                           <pointsize>10</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="label_35">
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(96, 145, 122);
+</string>
+                         </property>
+                         <property name="text">
+                          <string>Коротка назва</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="7" column="1" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="email_label">
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="engl_name_label">
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="8" column="1" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="syte_label">
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="1" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="director_fio_post_label">
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="0" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="label_44">
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(96, 145, 122);</string>
+                         </property>
+                         <property name="text">
+                          <string>Форма власності</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1" alignment="Qt::AlignLeft">
+                        <widget class="QLabel" name="financing_type_label">
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="calculator_page">
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <widget class="QFrame" name="header_frame_2">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_6">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>20</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>12</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item alignment="Qt::AlignLeft">
+                    <widget class="QLabel" name="label_6">
+                     <property name="font">
+                      <font>
+                       <pointsize>16</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Калькулятор конкурсного балу</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="main_body_calc_frame">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_16">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>20</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>6</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item alignment="Qt::AlignLeft|Qt::AlignTop">
+                    <widget class="QFrame" name="main_frame">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QGridLayout" name="gridLayout_2">
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="horizontalSpacing">
+                       <number>8</number>
+                      </property>
+                      <property name="verticalSpacing">
+                       <number>0</number>
+                      </property>
+                      <item row="8" column="0">
+                       <widget class="QLabel" name="label_12">
+                        <property name="text">
+                         <string>Галузевий коефіцієнт</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="7" column="0">
+                       <widget class="QLabel" name="label_14">
+                        <property name="text">
+                         <string>Регіональний коефіцієнт</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="7" column="2">
+                       <widget class="QLineEdit" name="coef_region_lineEdit">
+                        <property name="placeholderText">
+                         <string>1</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="1">
+                       <widget class="QLineEdit" name="score_cc_lineEdit">
+                        <property name="placeholderText">
+                         <string>150</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <widget class="QLineEdit" name="score_4_lineEdit">
+                        <property name="placeholderText">
+                         <string>150</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="2">
+                       <widget class="QLineEdit" name="coef_1_lineEdit">
+                        <property name="placeholderText">
+                         <string>0,5</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="2">
+                       <widget class="QLineEdit" name="coef_2_lineEdit">
+                        <property name="inputMask">
+                         <string/>
+                        </property>
+                        <property name="placeholderText">
+                         <string>0,3</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QLineEdit" name="score_2_lineEdit">
+                        <property name="placeholderText">
+                         <string>150</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="6" column="0">
+                       <widget class="QLabel" name="label_10">
+                        <property name="text">
+                         <string>Бал ЄФВВ</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QLineEdit" name="score_1_lineEdit">
+                        <property name="font">
+                         <font>
+                          <stylestrategy>PreferDefault</stylestrategy>
+                         </font>
+                        </property>
+                        <property name="layoutDirection">
+                         <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="placeholderText">
+                         <string>150</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="8" column="2">
+                       <widget class="QLineEdit" name="coef_industry_lineEdit">
+                        <property name="inputMask">
+                         <string/>
+                        </property>
+                        <property name="placeholderText">
+                         <string>1</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="label_13">
+                        <property name="text">
+                         <string>Бал з предмету 2</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="2">
+                       <widget class="QLineEdit" name="coef_4_lineEdit">
+                        <property name="placeholderText">
+                         <string>0,2</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="label_7">
+                        <property name="text">
+                         <string>Бал з предмету 1</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="6" column="2">
+                       <widget class="QLineEdit" name="coef_EFVV_lineEdit">
+                        <property name="placeholderText">
+                         <string>0</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QLabel" name="label_8">
+                        <property name="text">
+                         <string>Бал з предмету 3</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="0">
+                       <widget class="QLabel" name="label_9">
+                        <property name="text">
+                         <string>Бал з предмету 4</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="1">
+                       <widget class="QLineEdit" name="score_3_lineEdit">
+                        <property name="placeholderText">
+                         <string>150</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="2">
+                       <widget class="QLineEdit" name="coef_3_lineEdit">
+                        <property name="placeholderText">
+                         <string>0,2</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="6" column="1">
+                       <widget class="QLineEdit" name="score_EFVV_lineEdit">
+                        <property name="placeholderText">
+                         <string>150</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="2">
+                       <widget class="QLineEdit" name="coef_cc_lineEdit">
+                        <property name="placeholderText">
+                         <string>0,1</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QLabel" name="label_16">
+                        <property name="font">
+                         <font>
+                          <pointsize>10</pointsize>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Бал</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="label_15">
+                        <property name="font">
+                         <font>
+                          <pointsize>10</pointsize>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Предмет</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="0">
+                       <widget class="QLabel" name="label_11">
+                        <property name="text">
+                         <string>Бал за творчий конкурс</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="2">
+                       <widget class="QLabel" name="label_17">
+                        <property name="font">
+                         <font>
+                          <pointsize>10</pointsize>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Коефіцієнт</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="9" column="0" colspan="3">
+                       <widget class="QLabel" name="calculator_result_label">
+                        <property name="font">
+                         <font>
+                          <pointsize>12</pointsize>
+                         </font>
+                        </property>
+                        <property name="text">
+                         <string>Результат:</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="bottom_frame">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_15">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="calculate_button">
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="text">
+                      <string>Обрахувати</string>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="icons.qrc">
+                       <normaloff>:/icons/icons/functions_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/functions_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>32</width>
+                       <height>32</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="clear_button">
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="text">
+                      <string>Очистити</string>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="icons.qrc">
+                       <normaloff>:/icons/icons/delete_forever_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/delete_forever_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>32</width>
+                       <height>32</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="save_button">
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="text">
+                      <string>Зберегти</string>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="icons.qrc">
+                       <normaloff>:/icons/icons/save_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/save_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>32</width>
+                       <height>32</height>
+                      </size>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="specialty_page">
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item alignment="Qt::AlignTop">
+                 <widget class="QFrame" name="header_CoS_frame">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_17">
+                   <property name="leftMargin">
+                    <number>12</number>
+                   </property>
+                   <item alignment="Qt::AlignLeft">
+                    <widget class="QLabel" name="label_19">
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Каталог спеціальностей</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item alignment="Qt::AlignRight">
+                    <widget class="QFrame" name="search_frame_2">
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_18">
+                      <item>
+                       <widget class="QComboBox" name="comboBox_3">
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(57, 84, 78);</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>За ID</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>За назвою</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>За галуззю</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="pushButton_2">
+                        <property name="cursor">
+                         <cursorShape>PointingHandCursor</cursorShape>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="icons.qrc">
+                          <normaloff>:/icons/icons/sort_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/sort_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>24</width>
+                          <height>24</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="search_lineEdit_2">
+                        <property name="styleSheet">
+                         <string notr="true">background-color: rgb(57, 84, 78);</string>
+                        </property>
+                        <property name="placeholderText">
+                         <string>Пошук спеціальності</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="search_button_2">
+                        <property name="cursor">
+                         <cursorShape>PointingHandCursor</cursorShape>
+                        </property>
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="icons.qrc">
+                          <normaloff>:/icons/icons/search_24dp_000000.png</normaloff>:/icons/icons/search_24dp_000000.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>32</width>
+                          <height>32</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="main_body_Cos_frame">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_8">
+                   <item>
+                    <widget class="QTableWidget" name="tableWidget_2">
+                     <attribute name="horizontalHeaderDefaultSectionSize">
+                      <number>140</number>
+                     </attribute>
+                     <column>
+                      <property name="text">
+                       <string>ID</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Назва</string>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Галузь</string>
+                      </property>
+                     </column>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="account_page">
+               <layout class="QVBoxLayout" name="verticalLayout_9">
+                <item>
+                 <widget class="QFrame" name="header_frame_3">
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_19">
+                   <property name="leftMargin">
+                    <number>12</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>12</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_20">
+                     <property name="font">
+                      <font>
+                       <pointsize>12</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>Акаунт сторінка</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QStackedWidget" name="main_body_account_stackedWidget">
+                  <property name="enabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="tabletTracking">
+                   <bool>false</bool>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="contextMenuPolicy">
+                   <enum>Qt::NoContextMenu</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="currentIndex">
+                   <number>0</number>
+                  </property>
+                  <widget class="QWidget" name="main_body_account_stackedWidgetPage1">
+                   <layout class="QVBoxLayout" name="verticalLayout_11">
+                    <item>
+                     <widget class="QScrollArea" name="scrollArea_body">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="widgetResizable">
+                       <bool>true</bool>
+                      </property>
+                      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                       <property name="geometry">
+                        <rect>
+                         <x>0</x>
+                         <y>-114</y>
+                         <width>506</width>
+                         <height>339</height>
+                        </rect>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_3">
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item row="0" column="0" alignment="Qt::AlignLeft">
+                         <widget class="QFrame" name="foto_frame">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_10">
+                           <item>
+                            <widget class="QLabel" name="foto_label">
+                             <property name="text">
+                              <string>Photo</string>
+                             </property>
+                             <property name="scaledContents">
+                              <bool>true</bool>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                            </widget>
+                           </item>
+                           <item alignment="Qt::AlignBottom">
+                            <widget class="QPushButton" name="save_photo_pushButton">
+                             <property name="text">
+                              <string>Завантажити фото</string>
+                             </property>
+                             <property name="icon">
+                              <iconset resource="icons.qrc">
+                               <normaloff>:/icons/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>:/icons/icons/download_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>20</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QFrame" name="data_frame">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QGridLayout" name="gridLayout_4">
+                           <item row="5" column="0">
+                            <widget class="QLabel" name="label_27">
+                             <property name="text">
+                              <string>Дата народження :</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="7" column="0">
+                            <widget class="QLabel" name="label_26">
+                             <property name="text">
+                              <string>Емейл :</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="0">
+                            <widget class="QLabel" name="label_22">
+                             <property name="text">
+                              <string>Ім'я :</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="3" column="0">
+                            <widget class="QLabel" name="label_23">
+                             <property name="text">
+                              <string>Прізвище :</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="4" column="0">
+                            <widget class="QLabel" name="label_24">
+                             <property name="text">
+                              <string>По батькові :</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="6" column="0">
+                            <widget class="QLabel" name="label_25">
+                             <property name="text">
+                              <string>Телефон :</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <widget class="QLineEdit" name="user_name_lineEdit">
+                             <property name="placeholderText">
+                              <string>Ім'я</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="3" column="1">
+                            <widget class="QLineEdit" name="user_prizvushce_lineEdit">
+                             <property name="placeholderText">
+                              <string>Прізвище</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="4" column="1">
+                            <widget class="QLineEdit" name="user_pobatkovilineEdit">
+                             <property name="placeholderText">
+                              <string>По батькові</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="5" column="1">
+                            <widget class="QLineEdit" name="user_burthday_lineEdit">
+                             <property name="placeholderText">
+                              <string>дд/мм/рррр</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="6" column="1">
+                            <widget class="QLineEdit" name="user_phone_lineEdit">
+                             <property name="placeholderText">
+                              <string>000-000-00-00</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="7" column="1">
+                            <widget class="QLineEdit" name="user_email_lineEdit">
+                             <property name="placeholderText">
+                              <string>your@email.com</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QFrame" name="garph_frame">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QVBoxLayout" name="verticalLayout_14">
+                           <property name="spacing">
+                            <number>0</number>
+                           </property>
+                           <property name="leftMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="topMargin">
+                            <number>10</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <layout class="QVBoxLayout" name="account_graph_verticalLayout"/>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QFrame" name="score_frame">
+                          <property name="frameShape">
+                           <enum>QFrame::StyledPanel</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QGridLayout" name="gridLayout_5">
+                           <property name="horizontalSpacing">
+                            <number>10</number>
+                           </property>
+                           <item row="1" column="1">
+                            <widget class="QLineEdit" name="ukr_lang_lineEdit">
+                             <property name="placeholderText">
+                              <string>Бал</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="2" column="1">
+                            <widget class="QLineEdit" name="math_lineEdit">
+                             <property name="placeholderText">
+                              <string>Бал</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="3" column="1">
+                            <widget class="QLineEdit" name="history_lineEdit">
+                             <property name="placeholderText">
+                              <string>Бал</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="5" column="1">
+                            <widget class="QLineEdit" name="creative_lineEdit">
+                             <property name="placeholderText">
+                              <string>Бал</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="4" column="1">
+                            <widget class="QLineEdit" name="four_sub_lineEdit">
+                             <property name="placeholderText">
+                              <string>Бал</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="0">
+                            <widget class="QLabel" name="label_28">
+                             <property name="font">
+                              <font>
+                               <pointsize>10</pointsize>
+                               <weight>75</weight>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Предмет</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <widget class="QLabel" name="label_29">
+                             <property name="font">
+                              <font>
+                               <pointsize>10</pointsize>
+                               <weight>75</weight>
+                               <bold>true</bold>
+                              </font>
+                             </property>
+                             <property name="text">
+                              <string>Бал</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="0">
+                            <widget class="QLabel" name="label_30">
+                             <property name="text">
+                              <string>Українська мова</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="3" column="0">
+                            <widget class="QLabel" name="label_32">
+                             <property name="text">
+                              <string>Історія України</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="2" column="0">
+                            <widget class="QLabel" name="label_31">
+                             <property name="text">
+                              <string>Математика</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="5" column="0">
+                            <widget class="QLabel" name="label_33">
+                             <property name="text">
+                              <string>Творчий конкурс</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="6" column="1">
+                            <widget class="QLineEdit" name="EFVV_lineEdit">
+                             <property name="placeholderText">
+                              <string>Бал</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="6" column="0">
+                            <widget class="QLabel" name="label_34">
+                             <property name="text">
+                              <string>ЄФВВ</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="4" column="0">
+                            <widget class="QComboBox" name="forth_subject_comboBox">
+                             <property name="maxVisibleItems">
+                              <number>10</number>
+                             </property>
+                             <property name="minimumContentsLength">
+                              <number>20</number>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>12</width>
+                               <height>12</height>
+                              </size>
+                             </property>
+                             <item>
+                              <property name="text">
+                               <string>Українська література</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Біологія</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Фізика</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Хімія</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Географія</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Англійська мова</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Німецька мова</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Французька мова</string>
+                              </property>
+                             </item>
+                             <item>
+                              <property name="text">
+                               <string>Іспанська мова</string>
+                              </property>
+                             </item>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                        <item row="2" column="0" colspan="2">
+                         <widget class="QTableWidget" name="favorite_uni_tableWidget">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <attribute name="horizontalHeaderDefaultSectionSize">
+                           <number>94</number>
+                          </attribute>
+                          <column>
+                           <property name="text">
+                            <string>ID</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>Name</string>
+                           </property>
+                          </column>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="main_body_account_stackedWidgetPage2">
+                   <layout class="QVBoxLayout" name="verticalLayout_12">
+                    <item>
+                     <widget class="QLabel" name="label_21">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>12</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Зареєструйтеся щоб мати можливість зберігати або переглядати ваші дані</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item alignment="Qt::AlignBottom">
+                     <widget class="QLabel" name="advice_pass_ac_label">
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="name_lineEdit">
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Псевдонім</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="password_lineEdit">
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="echoMode">
+                       <enum>QLineEdit::Password</enum>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Пароль</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="login_pushButton">
+                      <property name="cursor">
+                       <cursorShape>PointingHandCursor</cursorShape>
+                      </property>
+                      <property name="text">
+                       <string>Увійти</string>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="icons.qrc">
+                        <normaloff>:/icons/icons/login_24dp_000000.png</normaloff>:/icons/icons/login_24dp_000000.png</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>32</width>
+                        <height>32</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignBottom">
+       <widget class="QFrame" name="footer_frame">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(87, 87, 87);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="footer_left_frame">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item alignment="Qt::AlignLeft">
+             <widget class="QLabel" name="made_by_label">
+              <property name="font">
+               <font>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Made by Yaiko Nazar OI-23</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="footer_right_frame">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item alignment="Qt::AlignRight">
+             <widget class="QPushButton" name="question_button">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>?</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignBottom">
+          <widget class="QFrame" name="size_grip">
+           <property name="minimumSize">
+            <size>
+             <width>10</width>
+             <height>10</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>10</width>
+             <height>10</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
