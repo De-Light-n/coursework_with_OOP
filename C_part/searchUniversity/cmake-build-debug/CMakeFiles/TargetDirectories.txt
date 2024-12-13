@@ -1,0 +1,7 @@
+C:/Projects/curse 2/coursework_with_OOP/C_part/searchUniversity/cmake-build-debug/CMakeFiles/search_universities.dir
+C:/Projects/curse 2/coursework_with_OOP/C_part/searchUniversity/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Projects/curse 2/coursework_with_OOP/C_part/searchUniversity/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Projects/curse 2/coursework_with_OOP/C_part/searchUniversity/cmake-build-debug/CMakeFiles/list_install_components.dir
+C:/Projects/curse 2/coursework_with_OOP/C_part/searchUniversity/cmake-build-debug/CMakeFiles/install.dir
+C:/Projects/curse 2/coursework_with_OOP/C_part/searchUniversity/cmake-build-debug/CMakeFiles/install/local.dir
+C:/Projects/curse 2/coursework_with_OOP/C_part/searchUniversity/cmake-build-debug/CMakeFiles/install/strip.dir

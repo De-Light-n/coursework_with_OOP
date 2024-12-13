@@ -1,0 +1,14 @@
+# ninja log v6
+6	1240	7557137110383011	CMakeFiles/get_sorted_universities.dir/get_sorted_universities.cpp.obj	c0e2ee857f7c7272
+1240	1919	7557137129403618	libget_sorted_universities.dll.a	9dbecce9ea18e10c
+27	594	7557141824287787	build.ninja	a5eac2d446632ca7
+1240	1919	7557137129403618	get_sorted_universities.dll	9dbecce9ea18e10c
+5	1114	7557143755740302	CMakeFiles/get_sorted_universities.dir/get_sorted_universities.cpp.obj	c0e2ee857f7c7272
+1115	1784	7557143773431845	get_sorted_universities.dll	9dbecce9ea18e10c
+1115	1784	7557143773431845	libget_sorted_universities.dll.a	9dbecce9ea18e10c
+5	1285	7557146151668066	CMakeFiles/get_sorted_universities.dir/get_sorted_universities.cpp.obj	c0e2ee857f7c7272
+1286	2026	7557146171786059	get_sorted_universities.dll	9dbecce9ea18e10c
+1286	2026	7557146171786059	libget_sorted_universities.dll.a	9dbecce9ea18e10c
+40	1623	7557164016161778	CMakeFiles/get_sorted_universities.dir/get_sorted_universities.cpp.obj	c0e2ee857f7c7272
+1624	2673	7557164042390243	get_sorted_universities.dll	9dbecce9ea18e10c
+1624	2673	7557164042390243	libget_sorted_universities.dll.a	9dbecce9ea18e10c

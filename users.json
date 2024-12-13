@@ -17,7 +17,31 @@
         ],
         "creative_concurse": "0",
         "EFVV_score": "0",
-        "photo": "",
+        "photo": "UsersPhoto\\39d71b0b-27d4-46ae-8166-fc6d386107ce",
+        "favorite_institutions": [
+            "53",
+            "97"
+        ]
+    },
+    "Адмін": {
+        "username": "Адмін",
+        "password": "321",
+        "name": "",
+        "prizvushce": "",
+        "pobatkovi": "",
+        "burthday": "",
+        "phone": "",
+        "email": "",
+        "ukr_lan_score": "0",
+        "math_score": "0",
+        "history": "0",
+        "forth_subject": [
+            0,
+            "0"
+        ],
+        "creative_concurse": "0",
+        "EFVV_score": "0",
+        "photo": "UsersPhoto\\ff205b48-d36e-4dce-8d34-a4b39436db14",
         "favorite_institutions": []
     }
 }
