@@ -20,7 +20,10 @@
         "photo": "UsersPhoto\\39d71b0b-27d4-46ae-8166-fc6d386107ce",
         "favorite_institutions": [
             "53",
-            "97"
+            "97",
+            "13",
+            "16",
+            "5751"
         ]
     },
     "Адмін": {
@@ -43,5 +46,28 @@
         "EFVV_score": "0",
         "photo": "UsersPhoto\\ff205b48-d36e-4dce-8d34-a4b39436db14",
         "favorite_institutions": []
+    },
+    "Руслан": {
+        "username": "Руслан",
+        "password": "4321",
+        "name": "",
+        "prizvushce": "",
+        "pobatkovi": "",
+        "burthday": "",
+        "phone": "",
+        "email": "",
+        "ukr_lan_score": "123",
+        "math_score": "234",
+        "history": "324",
+        "forth_subject": [
+            0,
+            "7436"
+        ],
+        "creative_concurse": "0",
+        "EFVV_score": "0",
+        "photo": "UsersPhoto\\3c5b7146-48e5-4742-bcc7-54de0e407a8a",
+        "favorite_institutions": [
+            "244"
+        ]
     }
 }

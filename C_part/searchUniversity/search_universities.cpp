@@ -31,7 +31,6 @@ extern "C" {
             }
         }
 
-        // Додаємо термінуючий nullptr у кінець масиву результатів
         char** result = (char**)malloc((matching_ids.size() + 1) * sizeof(char*));
         if (!result) return nullptr;
 
@@ -44,7 +43,7 @@ extern "C" {
             }
         }
 
-        result[matching_ids.size()] = nullptr; // Завершення масиву
+        result[matching_ids.size()] = nullptr; 
         return result;
     }
 

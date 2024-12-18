@@ -34,25 +34,22 @@ extern "C" {
                     return order.at(char_a) < order.at(char_b);
                 }
             } else {
-                return char_a < char_b; // Порівняння за замовчуванням, якщо символи поза алфавітом
+                return char_a < char_b; 
             }
         }
-        return a.size() < b.size(); // Якщо всі символи рівні, коротший рядок йде першим
+        return a.size() < b.size(); 
     }
 
     // Головна функція
     char** sort_universities(University* universities, int size, int sort_type) {
         if (sort_type < 1 || sort_type > 3) {
-            return nullptr; // Перевірка валідності типу сортування
+            return nullptr;
         }
 
-        // Перетворюємо масив у std::vector для зручності
         std::vector<University> university_vec(universities, universities + size);
 
-        // Створюємо таблицю порядку символів
         auto uk_order = create_ukrainian_order();
 
-        // Сортування залежно від типу
         if (sort_type == 1) {
             std::sort(university_vec.begin(), university_vec.end(), [](const University& a, const University& b) {
                 return std::stoi(a.id) < std::stoi(b.id);
@@ -69,14 +66,14 @@ extern "C" {
 
         // Створюємо масив рядків для результату
         char** result = (char**)malloc(size * sizeof(char*));
-        if (!result) return nullptr; // Перевірка на успішне виділення пам'яті
+        if (!result) return nullptr; 
 
         for (int i = 0; i < size; ++i) {
             const std::string& str = university_vec[i].id;
             result[i] = (char*)malloc((str.size() + 1) * sizeof(char));
             if (result[i]) {
                 std::copy(str.begin(), str.end(), result[i]);
-                result[i][str.size()] = '\0'; // Додаємо термінуючий нуль
+                result[i][str.size()] = '\0'; 
             }
         }
 

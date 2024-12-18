@@ -29,6 +29,8 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+        self.bridge = Bridge()
+
         # Забирання рамки
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
         self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
@@ -107,6 +109,8 @@ class MainWindow(QMainWindow):
         self.ui.search_button_2.clicked.connect(self.sort_and_search_speciality)
         self.ui.spec_sortbutton.clicked.connect(self.sort_and_search_speciality)
 
+        
+        self.ui.stackedWidget.setCurrentWidget(self.ui.account_page)
         self.show()
 
     def moveWindow(self, event):
@@ -546,10 +550,10 @@ class MainWindow(QMainWindow):
         result = []
         sort_type = self.ui.univ_sort_comboBox.currentIndex() + 1
         query = self.ui.search_lineEdit.text().strip()
-        sorted_univ = sort_universities(sort_type)
+        sorted_univ = self.bridge.sort_universities(sort_type)
 
         if query:
-            search_result = search_universities(query)
+            search_result = self.bridge.search_universities(query)
             result = [el for el in sorted_univ if el in search_result]
         else:
             result = sorted_univ
@@ -559,10 +563,10 @@ class MainWindow(QMainWindow):
         result = []
         sort_type = self.ui.spec_sort_comboBox.currentIndex() + 1
         query = self.ui.search_lineEdit_2.text().strip()
-        sorted_univ = sort_specialities(sort_type)
+        sorted_univ = self.bridge.sort_specialities(sort_type)
 
         if query:
-            search_result = search_specialities(query)
+            search_result = self.bridge.search_specialities(query)
             result = [el for el in sorted_univ if el in search_result]
         else:
             result = sorted_univ
